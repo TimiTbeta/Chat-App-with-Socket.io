@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Enter Port</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <div>Welcome</div>
+        <p>Enter your username and room number</p>
+      </div>
+      <form action="/chat.html">
+        <label>Username</label><br>
+        <input type="text" class="username-input" placeholder="Username" name="username"><br>
+        <label>Room Number</label><br>
+        <input type="text" class="room-input" placeholder="Room Number" name="room"><br>
+        <button type="submit">Enter</button>
+      </form>
+      
+      <script src="/socket.io/socket.io.js"></script>
+      <script src="/src/main.js"></script>
+    </div>
+  </body>
+</html>
