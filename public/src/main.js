@@ -7,7 +7,7 @@ const room = document.querySelector('.room-input');
 form.addEventListener('submit', e => {
   const data = { username: username.value, room: room.value };
 
-  socket.emit('join', data);
+  socket.emit('enter', data);
   username.value = "";
   room.value = "";
 });
